@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+const double PI=acos(-1);
+int main()
+{
+    //freopen("inin.txt","r",stdin);
+    //freopen("outout.txt","w",stdout);
+    int n;
+    double d;
+    while(scanf("%d%lf",&n,&d)!=EOF)
+    {
+        d/=2;
+        double ans=0;
+        while(n--)
+        {
+            ans+=d*d*4-PI*d*d;
+            d/=sqrt(2);
+        }
+        printf("%.2lf\n",ans);
+    }
+    return 0;
+}
