@@ -1,0 +1,21 @@
+#include <stdio.h>
+using namespace std;
+int main()
+{
+    int cnt=0;
+    int n,h,x;
+    while(~scanf("%d%d",&n,&h))
+    {
+        cnt=0;
+        for(int i=1;i<=n;i++)
+        {
+            scanf("%d",&x);
+            if(x>h)
+                cnt+=2;
+            else
+                cnt++;
+        }
+        printf("%d\n",cnt);
+    }
+    return 0;
+}
