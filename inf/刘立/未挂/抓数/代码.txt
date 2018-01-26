@@ -1,0 +1,29 @@
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+#include<cstring>
+#include<string>
+#include<stack>
+#include<cmath>
+
+using namespace std;
+
+typedef long long ll;
+
+int n,d,num[2];
+
+int main()
+{
+    while(~scanf("%d",&n))
+    {
+        memset(num,0,sizeof num);
+        ll sum=0;
+        for(int i=1;i<=n;i++)
+        {
+            scanf("%d",&d),sum+=d;
+            num[d&1]++;
+        }
+        puts(sum&1||num[1]?"First":"Second");
+    }
+    return 0;
+}

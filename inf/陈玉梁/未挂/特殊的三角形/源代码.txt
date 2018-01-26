@@ -1,0 +1,42 @@
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<cmath>
+using namespace std;
+
+bool check(int x1,int y1,int x2,int y2,int x3,int y3)
+{
+    int len1=(x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);
+    int len2=(x1-x3)*(x1-x3)+(y1-y3)*(y1-y3);
+    int len3=(x2-x3)*(x2-x3)+(y2-y3)*(y2-y3);
+    if (sqrt(len1)+sqrt(len2)<=sqrt(len3)||sqrt(len2)+sqrt(len3)<=sqrt(len1)||sqrt(len1)+sqrt(len3)<=sqrt(len2))
+        return false;
+    if (len1+len2==len3||len1+len3==len2||len2+len3==len1)
+        return true;
+    return false;
+}
+int main()
+{
+    int x1,x2,x3,y1,y2,y3;
+    while (scanf("%d%d%d%d%d%d",&x1,&y1,&x2,&y2,&x3,&y3)!=EOF) {
+          if (check(x1,y1,x2,y2,x3,y3)) {
+              printf("RIGHT\n");
+          }
+          else {
+              bool flag=false;
+              if (check(x1-1,y1,x2,y2,x3,y3)||check(x1+1,y1,x2,y2,x3,y3)||check(x1,y1-1,x2,y2,x3,y3))
+                  flag=true;
+              if (check(x1,y1+1,x2,y2,x3,y3)||check(x1,y1,x2-1,y2,x3,y3)||check(x1,y1,x2+1,y2,x3,y3))
+                  flag=true;
+              if (check(x1,y1,x2,y2-1,x3,y3)||check(x1,y1,x2,y2+1,x3,y3)||check(x1,y1,x2,y2,x3-1,y3))
+                  flag=true;
+              if (check(x1,y1,x2,y2,x3+1,y3)||check(x1,y1,x2,y2,x3,y3-1)||check(x1,y1,x2,y2,x3,y3+1))
+                  flag=true;
+              if (flag)
+                printf("ALMOST\n");
+              else
+                printf("NEITHER\n");
+          }
+    }
+    return 0;
+}

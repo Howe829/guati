@@ -1,0 +1,130 @@
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<cmath>
+using namespace std;
+
+const int maxn=1050;
+bool vis[maxn];
+int a[3][10];
+
+int main()
+{
+    int n;
+    while (scanf("%d",&n)!=EOF) {
+        memset (vis,false,sizeof (vis));
+        for (int i=0;i<n;i++) {
+            for (int j=0;j<6;j++) {
+                scanf("%d",&a[i][j]);
+                vis[a[i][j]]=true;
+            }
+        }
+    if (n==3) {
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[0][i]*10+a[1][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[1][i]*10+a[0][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[0][i]*10+a[2][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[2][i]*10+a[0][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[1][i]*10+a[2][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[2][i]*10+a[1][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                for (int k=0;k<6;k++) {
+                    int num=a[0][i]*100+a[1][j]*10+a[2][k];
+                    vis[num]=true;
+                }
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                for (int k=0;k<6;k++) {
+                    int num=a[0][i]*100+a[2][j]*10+a[1][k];
+                    vis[num]=true;
+                }
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                for (int k=0;k<6;k++) {
+                    int num=a[1][i]*100+a[0][j]*10+a[2][k];
+                    vis[num]=true;
+                }
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                for (int k=0;k<6;k++) {
+                    int num=a[1][i]*100+a[2][j]*10+a[0][k];
+                    vis[num]=true;
+                }
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                for (int k=0;k<6;k++) {
+                    int num=a[2][i]*100+a[0][j]*10+a[1][k];
+                    vis[num]=true;
+                }
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                for (int k=0;k<6;k++) {
+                    int num=a[2][i]*100+a[1][j]*10+a[0][k];
+                    vis[num]=true;
+                }
+            }
+        }
+    }
+    else if (n==2) {
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[0][i]*10+a[1][j];
+                vis[num]=true;
+            }
+        }
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<6;j++) {
+                int num=a[1][i]*10+a[0][j];
+                vis[num]=true;
+            }
+        }
+    }
+        for (int i=1;i<=1000;i++) {
+            if (vis[i]==false) {
+                printf("%d\n",i-1);
+                break;
+            }
+        }
+    }
+    return 0;
+}
