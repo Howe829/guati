@@ -1,0 +1,80 @@
+2
+1 3d6h-7d5h
+2 1d8h-2d9h 4d13h-8d11h
+4 
+3 9d1h-9d1h 3d2h-4d7h 5d11h-5d12h
+2 3d0h-4d4h 5d12h-5d13h
+2 7d22h-8d13h 1d1h-2d2h
+2 5d5h-6d10h 9d0h-9d23h
+1
+1 1d0h-9d23h
+1
+1 9d23h-9d23h
+1
+1 9d22h-9d23h
+1
+1 9d22h-9d22h
+1
+2 2d0h-3d0h 4d1h-5d1h
+1
+2 2d0h-3d0h 4d0h-5d0h
+1
+2 9d7h-9d23h 4d23h-5d23h
+2
+1 2d18h-6d19h
+2 5d6h-8d3h 4d7h-4d7h
+8
+3 4d0h-4d12h 1d14h-8d20h 1d5h-7d19h
+1 1d16h-7d8h
+3 5d3h-8d4h 4d1h-9d18h 4d23h-6d22h
+2 3d6h-5d20h 4d6h-6d0h
+2 2d8h-8d18h 6d23h-9d22h
+4 1d8h-2d4h 9d5h-9d7h 1d14h-7d6h 5d1h-7d17h
+4 6d16h-8d4h 6d10h-7d1h 6d0h-8d18h 3d17h-5d12h
+4 9d8h-9d11h 4d18h-5d20h 3d4h-4d3h 3d8h-9d21h
+4
+2 2d18h-9d13h 3d14h-4d19h
+2 2d3h-4d8h 2d19h-7d17h
+3 1d5h-8d19h 5d19h-8d7h 3d9h-9d8h
+3 2d6h-2d23h 4d4h-4d18h 7d15h-9d8h
+8
+4 5d22h-8d5h 6d20h-7d3h 4d19h-8d18h 3d3h-9d6h
+1 4d15h-5d8h
+4 2d19h-6d9h 2d6h-6d16h 7d19h-8d16h 5d6h-7d9h
+2 5d18h-6d1h 9d0h-9d5h
+1 2d4h-9d1h
+2 1d4h-2d21h 4d8h-5d14h
+2 4d5h-7d10h 1d20h-7d8h
+1 3d3h-6d7h
+6
+3 1d19h-7d7h 4d12h-6d12h 3d21h-6d6h
+2 1d9h-5d17h 3d15h-5d0h
+4 1d5h-8d6h 2d6h-5d23h 6d3h-8d16h 2d23h-7d9h
+3 2d22h-6d19h 2d18h-9d16h 6d10h-7d5h
+3 1d23h-2d13h 7d8h-7d12h 3d23h-7d0h
+3 7d14h-8d8h 8d15h-9d7h 5d0h-8d17h
+7
+2 6d19h-9d8h 2d3h-8d1h
+4 4d2h-6d0h 1d3h-6d0h 2d8h-7d21h 1d21h-8d5h
+2 6d6h-9d3h 2d4h-5d4h
+2 2d5h-4d10h 6d18h-9d6h
+4 4d6h-5d1h 5d3h-5d5h 2d9h-3d0h 1d12h-3d3h
+4 5d18h-9d19h 1d13h-9d19h 6d4h-7d10h 4d17h-7d16h
+2 2d16h-9d8h 3d20h-4d20h
+9
+2 1d6h-6d15h 7d16h-9d16h
+2 7d8h-7d10h 7d11h-7d22h
+3 6d14h-6d23h 1d6h-3d5h 2d20h-9d14h
+2 5d13h-6d14h 4d13h-5d11h
+2 5d5h-8d21h 1d1h-1d4h
+1 1d23h-8d15h
+4 5d15h-9d5h 5d21h-6d12h 1d11h-8d14h 1d9h-4d2h
+1 2d0h-9d13h
+3 5d18h-7d4h 5d22h-6d11h 5d22h-6d10h
+2
+2 5d0h-6d15h 6d11h-6d22h
+2 8d16h-9d23h 3d4h-7d5h
+1
+4 2d2h-3d3h 4d4h-5d5h 6d6h-7d7h 8d8h-9d9h
+1
+2 1d0h-5d4h 2d6h-9d23h

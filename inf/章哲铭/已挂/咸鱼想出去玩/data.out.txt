@@ -1,0 +1,22 @@
+1d0h-1d7h 2d10h-3d5h 8d12h-9d23h
+1d0h-1d0h 2d3h-2d23h 4d8h-5d4h 6d11h-7d21h 8d14h-8d23h
+No
+1d0h-9d22h
+1d0h-9d21h
+1d0h-9d21h 9d23h-9d23h
+1d0h-1d23h 3d1h-4d0h 5d2h-9d23h
+1d0h-1d23h 3d1h-3d23h 5d1h-9d23h
+1d0h-4d22h 6d0h-9d6h
+1d0h-2d17h 8d4h-9d23h
+1d0h-1d4h 9d23h-9d23h
+1d0h-1d4h 9d14h-9d23h
+1d0h-1d3h 9d7h-9d23h
+1d0h-1d4h 9d17h-9d23h
+1d0h-1d2h 9d20h-9d23h
+1d0h-1d0h 1d5h-1d5h 9d17h 9d23h
+1d0h-3d3h 7d6h-8d15h
+1d0h-2d1h 3d4h-4d3h 5d6h-6d5h 7d8h-8d7h 9d10h-9d23h
+No
+
+
+

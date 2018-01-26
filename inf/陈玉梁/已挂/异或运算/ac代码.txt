@@ -1,0 +1,26 @@
+#include<iostream>
+ #include<cstdio>
+ #include<cmath>
+ #define ll long long
+ using namespace std;
+
+ int a[100];
+ int main()
+ {
+     ll n,k;
+     while(scanf("%lld%lld",&n,&k)!=EOF)
+    {
+     ll m=n,len=0,res=0;
+     int cnt=1;
+     while (m) {
+        len++;
+        if (m&1) res++;
+        a[cnt++]=m%2;
+        m=m/2;
+     }
+     cnt=cnt-1;
+     if (k!=1) printf("%lld\n",(ll) pow(2,cnt)-1);
+     else printf("%lld\n",n);
+     }
+     return 0;
+ }

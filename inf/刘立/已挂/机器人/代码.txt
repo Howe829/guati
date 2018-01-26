@@ -1,0 +1,23 @@
+#include<cstdio>
+#include<math.h>
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+int main()
+{
+	int n,a,b[10];
+	while(~scanf("%d",&n))
+	{
+	    memset(b,0,sizeof b);
+		for(int i=1;i<=n;i++)
+		{
+			scanf("%d",&a);
+			b[a]++;
+		}
+		int ans=2*min(b[1],b[2])+2*min(b[3],b[4]);
+		printf("%d\n",ans);
+	}
+	return 0;
+}

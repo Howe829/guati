@@ -1,0 +1,29 @@
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
+using namespace std;
+char s[105],t[105];
+int main()
+{
+	//freopen("E:/input.txt", "r", stdin);
+	//freopen("E:/output.txt", "w", stdout);
+	while (~scanf("%s%s", s, t))
+	{
+		int len1 = strlen(s);
+		int len2 = strlen(t);
+		int ans = 0;
+		for (int i = 0; i < len1; i++) {
+			if (s[i] == t[0]&&i+len2<=len1) {
+				int flag = 1;
+				for (int j = 0; j < len2; j++) {
+					if (s[i + j] != t[j]) {
+						flag = 0; break;
+					}
+				}
+				if (flag) ans++;
+			}
+		}
+		printf("%d\n", ans);
+	}
+	return 0;
+}

@@ -1,0 +1,122 @@
+#include <iostream>  
+#include <cstdio>  
+#include <cstring>  
+#include <string>  
+#include <cstdlib>  
+#include <cmath>  
+#include <vector>  
+#include <queue>  
+#include <iterator>  
+#include <map>  
+#include <algorithm>  
+#include <set>  
+#include <functional>  
+#include <time.h>  
+#define lson rt<<1  
+#define rson rt<<1|1  
+using namespace std;
+typedef long long LL;
+typedef unsigned long long ULL;
+const int INF = 1e9 + 5;
+const int MAXN = 100005;
+const LL MOD = 1000000007;
+const double eps = 1e-8;
+const double PI = acos(-1.0);
+LL gcd(LL a, LL b) { return b == 0 ? a : gcd(b, a%b); }
+LL ppow(LL a, LL b) { LL res = 1; for (int i = 1; i <= b; i++)   res *= a; return res; }
+LL quick_mod(LL a, LL b, LL c) { LL ans = 1; while (b) { if (b % 2 == 1)ans = (ans*a) % c; b /= 2; a = (a*a) % c; }return ans; }
+
+bool Time[11][24];
+
+void init()
+{
+	for (int i = 0; i < 10; i++)
+		for (int j = 0; j < 24; j++)
+			Time[i][j] = true;
+	for (int j = 0; j < 24; j++)
+		Time[10][j] = false;
+}
+
+void solve(int x, int y, int X, int Y)
+{
+	if (x == X)
+		for (int i = y; i <= Y; i++)
+			Time[x][i] = false;
+	else
+		for (int i = x; i <= X; i++)
+			if (i == x)
+				for (int j = y; j <= 23; j++)
+					Time[i][j] = false;
+			else if (i == X)
+				for (int j = 0; j <= Y; j++)
+					Time[i][j] = false;
+			else
+				for (int j = 0; j <= 23; j++)
+					Time[i][j] = false;
+}
+
+void output()
+{
+	bool first;
+	bool flag;
+	int Ld, Lh, Rd, Rh;
+	int d=1, h=0;
+	flag = false;
+	first = true;
+	while (d<=10&&h<=23)
+	{
+		if (Time[d][h] && !flag)
+		{
+			Ld = d;
+			Lh = h;
+			flag = true;
+		}
+		else if (!Time[d][h] && flag)
+		{
+			Rd = d;
+			Rh = h-1;
+			if (Rh == -1)
+			{
+				Rd--;
+				Rh = 23;
+			}
+			flag = false;
+			if (first)
+			{
+				printf("%dd%dh-%dd%dh", Ld, Lh, Rd, Rh);
+				first = false;
+			}
+			else
+				printf(" %dd%dh-%dd%dh", Ld, Lh, Rd, Rh);
+		}
+		h++;
+		if (h == 24)
+		{
+			h = 0;
+			d++;
+		}
+	}
+	if (first)
+		printf("No");
+	printf("\n");
+}
+
+int main()
+{
+	int n, t;
+	int x, y, X, Y;
+	while (scanf("%d",&n)!=EOF)
+	{
+		init();
+		while (n--)
+		{
+			scanf("%d", &t);
+			while (t--)
+			{
+				scanf("%dd%dh-%dd%dh", &x, &y, &X, &Y);
+				solve(x, y, X, Y);
+			}
+		}
+		output();
+	}
+}
